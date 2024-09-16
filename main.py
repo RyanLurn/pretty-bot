@@ -19,10 +19,10 @@ console = Console()
 
 
 def main():
-
+    delete_last_lines()
     # Welcome message
     console.print(Panel(Markdown(
-        '# Welcome to Pretty Bot\n- Type your message, then hit enter to chat.\n- Type ```/exit```, then hit enter to close the app.'), border_style="cyan"))
+        '# Welcome to Pretty Bot\n- Type your message, then press Enter to chat.\n- Type ```/exit```, then press Enter to close the app.'), border_style="cyan"))
     print()
 
     # Initialize the chat history
@@ -48,7 +48,7 @@ def main():
 
         # Get AI's response
         console.print(Panel(
-            "[italic]Think...[italic]",
+            "[italic]Thinking...[italic]",
             title="[bold green]AI[/bold green]",
             title_align="left",
             border_style="green"
